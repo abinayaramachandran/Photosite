@@ -1,0 +1,28 @@
+// Place all the styles related to the photos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+* {
+  box-sizing: border-box;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+td {
+  border: 1px solid #000;
+}
+
+tr{
+  display: block;
+}
+table td:first-child,
+table td:first-child input {
+  width: 50%;
+}
+.small {
+  width: 20px;
+}
+.medium {
+  width: 40px;
+}

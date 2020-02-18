@@ -1,0 +1,20 @@
+<h1>Photosite User List</h1>
+<h4> There are <%= @users.count %> Users</h4>
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>First</th>
+      <th>Last</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%=  user.id %></td>
+        <td><%= link_to user.first_name, user_photos_path(user.id) %></td>
+        <td><%= link_to user.last_name, user_photos_path(user.id) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
